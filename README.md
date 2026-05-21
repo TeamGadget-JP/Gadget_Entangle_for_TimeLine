@@ -31,12 +31,19 @@ GEC、GEP、GTransporter、そして今回のGETLはUnityをベースとした�
 3. Cascadeurを起動します。
 4. `メニューバー > Commands > GETL TimeLine Receiver`をクリック。
 5. Event logに`▶️[GETL TimeLine Receiver]Started syncing with Unity!(Port:8991)`を表示されば同期準備OKです。
-6. もう一度`メニューバー > Commands > GETL TimeLine Receiver`をクリックして同期停止です。(Cascadeurで常時表示できるUIの制作方法がわかりません、知っている方いましたら教えてください)
+6. もう一度`メニューバー > Commands > GETL TimeLine Receiver`をクリックして同期停止です。
+   (Cascadeurで常時表示できるUIの制作方法がわかりません、知っている方いましたら教えてください)
 
-### 2. Unity側の準備
-1. Unityで**空の新規プロジェクト**を作成します（推奨：Unity 6 / URP環境）。
-2. このリポジトリから `GEC_v1.0.0.unitypackage` をダウンロードします。
-3. Unityプロジェクトにインポートします（`Assets > Import Package > Custom Package...`）。
+### 2. iClone側の準備
+1. このリポジトリから `GEi_TimeReceiver.py` をダウンロードします。
+2. iCloneを起動します。
+3. `メニューバー > Script > Load Python`をクリック。
+4. 1.でダウンロードした`GEi_TimeReceiver.py`を読込。
+5. ダイアログが開きますので`▶ START SYNC(Port:8992)`ボタンで同期開始。
+
+### 3. Unity側の準備
+1. このリポジトリから `GETL_v1.0.0.unitypackage` をダウンロードします。
+2. Unityプロジェクトにインポートします（`Assets > Import Package > Custom Package...`）。
 
 ## 🎮 使い方（リアルタイム同期の実行）
 1. **シーンを開く:** パッケージ内の `SampleScene` を開きます。
