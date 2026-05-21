@@ -31,6 +31,7 @@ GEC、GEP、GTransporter、そして今回のGETLはUnityをベースとした�
 3. Cascadeurを起動します。
 4. `メニューバー > Commands > GETL TimeLine Receiver`をクリック。
 5. Event logに`▶️[GETL TimeLine Receiver]Started syncing with Unity!(Port:8991)`を表示されば同期準備OKです。
+6. もう一度`メニューバー > Commands > GETL TimeLine Receiver`をクリックして同期停止です。(Cascadeurで常時表示できるUIの制作方法がわかりません、知っている方いましたら教えてください)
 
 ### 2. Unity側の準備
 1. Unityで**空の新規プロジェクト**を作成します（推奨：Unity 6 / URP環境）。
