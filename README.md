@@ -29,7 +29,8 @@ GEC、GEP、GTransporter、そして今回のGETLはUnityをベースとした�
 1. このリポジトリから `GEC_TimeReceiver.py` をダウンロードします。
 2. CascadeurのPythonプラグインフォルダに配置します：`[Cascadeurインストール先]\resources\scripts\python\commands\`
 3. Cascadeurを起動します。
-4. `メニューバー > Commands > GETL TimeLine Receiver`をクリック
+4. `メニューバー > Commands > GETL TimeLine Receiver`をクリック。
+5. Event logに`▶️[GETL TimeLine Receiver]Started syncing with Unity!(Port:8991)`を表示されば同期準備OKです。
 
 ### 2. Unity側の準備
 1. Unityで**空の新規プロジェクト**を作成します（推奨：Unity 6 / URP環境）。
