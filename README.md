@@ -23,7 +23,7 @@ GEC、GEP、GTransporter、そして今回のGETLはUnityをベースとした�
 ---
 **Windows専用:** 本ツールは現在、Windows環境でのみ動作します。macOSやLinuxには対応しておりません。
 
-## 導入手順
+## 導入手順と使用方法
 
 ### 1. Cascadeur側の準備
 1. このリポジトリから `GEC_TimeReceiver.py` をダウンロードします。
@@ -44,15 +44,8 @@ GEC、GEP、GTransporter、そして今回のGETLはUnityをベースとした�
 ### 3. Unity側の準備
 1. このリポジトリから `GETL_v1.0.0.unitypackage` をダウンロードします。
 2. Unityプロジェクトにインポートします（`Assets > Import Package > Custom Package...`）。
+3. 
 
-## 使い方（リアルタイム同期の実行）
-1. **シーンを開く:** パッケージ内の `SampleScene` を開きます。
-2. **ダッシュボード起動:** Unity上部メニューから `Gadget > Gadget Entangle Dashboard` をクリックします。
-3. **Unity再生:** Unityの **Playボタン** を押してプレイモードに入ります。
-4. **接続待機:** ダッシュボードの `🟢 CONNECT (Start)` ボタンを押します。
-5. **Cascadeurで同期開始:** Cascadeurを開き、`Commands > Gadget Entangle for Cascadeur` スクリプトを実行して、Event logに `standing by!` が表示されればOKです！
-
-これで準備完了です！Cascadeur側でキャラクターを動かすと、Unityのプレイモード上で物理演算やライティングが効いた状態のまま、超低遅延でモーションが同期します！
 
 本ソフトウェアは独自ライセンスのもとで提供されています。無断再配布、改変、および逆コンパイル（リバースエンジニアリング）は固く禁じられています。
 詳細については、[LICENSE](./LICENSE) ファイルをご確認ください。
