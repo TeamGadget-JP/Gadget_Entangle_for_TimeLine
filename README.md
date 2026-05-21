@@ -26,9 +26,10 @@ GEC、GEP、GTransporter、そして今回のGETLはUnityをベースとした�
 ## 導入手順
 
 ### 1. Cascadeur側の準備
-1. このリポジトリから `gec_live_link.pyc` をダウンロードします。
+1. このリポジトリから `GEC_TimeReceiver.py` をダウンロードします。
 2. CascadeurのPythonプラグインフォルダに配置します：`[Cascadeurインストール先]\resources\scripts\python\commands\`
-3. Cascadeurを再起動します。
+3. Cascadeurを起動します。
+4. `メニューバー > Commands > GETL TimeLine Receiver`をクリック
 
 ### 2. Unity側の準備
 1. Unityで**空の新規プロジェクト**を作成します（推奨：Unity 6 / URP環境）。
