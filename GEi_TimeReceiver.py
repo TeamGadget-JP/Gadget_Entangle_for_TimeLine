@@ -63,7 +63,7 @@ class GETL_iClone_Receiver(QWidget):
                 sys.getl_ic_timer_id = timer_id
                 
         self.status_label.setText("<b>Status: <font color='green'>SYNCING</font></b>")
-        print("▶️ [GETL] Started Zero-Lag Sniper Sync on port 8992.")
+        print("▶️ [GETL] Started Sync on port 8992.")
         
     def stop_sync(self):
         if getattr(sys, 'getl_ic_timer_id', None) is not None:
