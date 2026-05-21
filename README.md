@@ -45,7 +45,7 @@ GEC、GEP、GTransporter、そして今回のGETLはUnityをベースとした�
 1. このリポジトリから `GETL_v1.0.0.unitypackage` をダウンロードします。
 2. Unityプロジェクトにインポートします（`Assets > Import Package > Custom Package...`）。
 
-## 🎮 使い方（リアルタイム同期の実行）
+## 使い方（リアルタイム同期の実行）
 1. **シーンを開く:** パッケージ内の `SampleScene` を開きます。
 2. **ダッシュボード起動:** Unity上部メニューから `Gadget > Gadget Entangle Dashboard` をクリックします。
 3. **Unity再生:** Unityの **Playボタン** を押してプレイモードに入ります。
