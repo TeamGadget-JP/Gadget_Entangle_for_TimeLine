@@ -64,14 +64,14 @@ If this tool helps you in your production, we would be incredibly grateful if yo
 This software is provided under a custom license. Modification is permitted, but unauthorized redistribution for sales or similar purposes is strictly prohibited. For details, please check the `LICENSE` file.
 # Gadget Entangle for TimeLine (GETL)
 
-GETLは今までのツールとは干渉することなく単体で使用することができます、GETL二は主に2つの機能があります。
+GETLは今までのツールとは干渉することなく単体で使用することができます、GETLには主に2つの機能があります。
 1. Unityのタイムラインをマスターコントローラー(片方向)として Cascadeur & iClone のタイムラインとリアルタイム同期する機能 (別々のポートを使用するため同時使用が可能)
 2. リアルタイムに送られてくるキャラクターボーン情報をボタン一発でレコーディングするアニメーションベイク機能
 
 ##  開発の目的そして今後の方針(OSS化)
 GEC、GEP、GTransporter、そして今回のGETLはUnityをベースとした映像制作環境(VP)を個人ベースで実現できないか？というのが最大の開発目的です。
 そしてそれを実現することを目標にツールの制作をしています、ですから、その他の用途でご使用される方は意図する動作をしてくれないケースもあるかと思います、
-運用方法の工夫などで解決できれば良いのですが、スクリプトを直接いじらないと駄目なこともあるでしょう、そこで今回の公開からはOSSとした次第です。
+運用方法の工夫などで解決できれば良いのですが、スクリプトを直接いじらないと駄目なこともあるでしょう。そこで今回の公開からはOSSとした次第です。
 また、いままでリリーズ済みのツールも開発元ライセンスを遵守しなければならない物以外は今後、順次OSS公開に切り替えていきます。
 
 ##  重要な注意事項（必ずお読みください）
@@ -110,7 +110,7 @@ GEC、GEP、GTransporter、そして今回のGETLはUnityをベースとした�
 4. Project > Assets > Gadget > Scripts に`GETL_Broadcaster.cs`が入ります。
 5. Hierarchy に空のゲームオブジェクトを制作します、名称は任意です、それに`GETL_Broadcaster.cs`をアタッチしてください。
 6. 5.の空のゲームオブジェクト(名前をつけていればそれに)を選択して`Window > Sequencing > Timeline`
-7. Timelineウィンドウの`Create > 任意の名前で制作`これでシークバーを動かせば同期します。
+7. Timelineウィンドウの`Create > 任意の名前で作成`これでシークバーを動かせば同期します。
 
 ### 4. アニメーションベイクの仕方
 1. ツールバー`Gadget > GETL Recorder`でGETL Recorder UIが開きます。
@@ -118,7 +118,7 @@ GEC、GEP、GTransporter、そして今回のGETLはUnityをベースとした�
 3. Playable Director に GETL_Broadcaster.csをアタッチしたゲームオブジェクトをドラッグアンドドロップ。
 4. Overwrite Clip に `.anim`をドラッグアンドドロップ。
 5. Target Frame Rate は Cascadeur や iClone で30だったり60だったりしますので、合わせて設定してください。
-6. GETL_Broadcaster.csをアタッチしたゲームオブジェクトにもInspector でも Target Frame Rate 項目がありますので忘れずにそちらも合わせてください。
+6. GETL_Broadcaster.csをアタッチしたゲームオブジェクトのInspector にも Target Frame Rate 項目がありますので忘れずにそちらも合わせてください。
 7. `Bake Delay(sec)`はそのままでいいと思います。
 8. iClone を同期してベイクする場合は`Bake Facial(Blendshape)`チェックを入れて下さい。
 9. 後は`●START ANIMATION BAKE`ボタンを押すだけでベイクします。
