@@ -60,7 +60,7 @@ If this tool helps you in your production, we would be incredibly grateful if yo
 8. If you are syncing and baking from iClone, please check the `Bake Facial(Blendshape)` box.
 9. Finally, just press the `● START ANIMATION BAKE` button to begin baking.
 
-## ⚠️ Important Notice: Limitations Regarding Unity's Timeline and Humanoid Avatar
+## ⚠️ Important Notice: Limitations Regarding Unity's Timeline and Humanoid Avatar ##
 Unlike conventional FBX workflows, GEC and GEi acquire bone data directly via scripts and apply it to characters in Unity.
 During real-time synchronization, the script achieves this by completely ignoring the `Humanoid Avatar` control applied to the character and forcefully overwriting the bone transforms. 
 However, when playing back baked animations using **Unity's native Timeline**, the internal influence of the `Humanoid Avatar` cannot be bypassed.
@@ -68,6 +68,7 @@ As a result, if you play the timeline while the `Humanoid Avatar` is still appli
 The only workaround to prevent this is to **remove the `Avatar` from the character's Animator component (set it to None)**.
 While this workaround is perfectly fine for Video Production (VP) purposes, it causes **critical issues for Game Development**, where animation retargeting and state machines are essential.
 Therefore, if your ultimate goal is game development, we highly recommend avoiding this tool for animation baking. Please consider this feature specifically designed for video production workflows.
+
 ---
 This software is provided under a custom license. Modification is permitted, but unauthorized redistribution for sales or similar purposes is strictly prohibited. For details, please check the `LICENSE` file.
 # Gadget Entangle for TimeLine (GETL)
@@ -131,7 +132,7 @@ GEC、GEP、GTransporter、そして今回のGETLはUnityをベースとした�
 8. iClone を同期してベイクする場合は`Bake Facial(Blendshape)`チェックを入れて下さい。
 9. 後は`●START ANIMATION BAKE`ボタンを押すだけでベイクします。
 
-## ⚠️ 重要事項：Unityのタイムライン仕様とHumanoid Avatarに関する制限
+## ⚠️ 重要事項：Unityのタイムライン仕様とHumanoid Avatarに関する制限 ##
 GECやGEiは、従来のFBXファイルを経由するワークフローとは異なり、スクリプトを通じて直接ボーン情報を取得し、Unity上のキャラクターに適用しています。
 リアルタイム同期の実行中は、スクリプトがキャラクターの `Humanoid Avatar` の制御を無視し、強制的にボーンのトランスフォームを上書きすることで同期を実現しています。
 しかし、ベイクしたアニメーションを**Unity公式のタイムラインで再生する際**には、この `Humanoid Avatar` の影響を回避することができません。
@@ -140,5 +141,6 @@ GECやGEiは、従来のFBXファイルを経由するワークフローとは�
 映像制作（VP）目的であればこの運用で全く問題ありませんが、アニメーションの流用やステートマシンの利用が必須となる**ゲーム制作においては致命的な問題**となります。
 したがって、最終的な目的がゲーム開発である場合、本ツールを使用したアニメーションのベイクは推奨しません。あくまで「映像制作向けの機能」としてご活用ください。
 
+---
 本ソフトウェアは独自ライセンスのもとで提供されています。改変は可としますが、販売等の目的での無断再配布は固く禁じられています。
 詳細については、[LICENSE](./LICENSE) ファイルをご確認ください。
