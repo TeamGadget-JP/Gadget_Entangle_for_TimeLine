@@ -18,7 +18,7 @@ Because of this, we have decided to release this tool as Open Source Software (O
 
 ## A Request from the Developer
 If this tool helps you in your production, we would be incredibly grateful if you could subscribe to our YouTube channel and hit the like button. Your support is the greatest motivation for our future development! 
-▶ [YouTube Channel Link] (Insert your URL here)
+▶️ [https://youtu.be/kNBWSCf2cIw](https://www.youtube.com/channel/UCj9OYwzMAIgYAeVkTV4wczw)
 
 **Windows Only:** This tool currently operates only in a Windows environment (as it utilizes the Windows API). It does not work on macOS or Linux.
 
