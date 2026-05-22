@@ -12,7 +12,7 @@ Therefore, if you intend to use this tool for other purposes, it may not behave 
 
 Because of this, we have decided to release this tool as Open Source Software (OSS). Furthermore, for the tools we have already released (excluding those that must comply with the original developer's license), we plan to gradually transition them to OSS in the future.
 
-## ⚠️ Important Notices (Please Read Carefully)
+## Important Notices (Please Read Carefully)
 * **No Support (As-is Delivery):** The developer is an individual FA (Factory Automation) engineer with a separate full-time job. Therefore, it is practically impossible to provide technical support tailored to individual environments. This tool is provided "completely free of charge and unsupported."
 * However, we plan to perform bug fixes and version updates irregularly. We highly welcome your feedback! Even the smallest comments are greatly appreciated.
 
