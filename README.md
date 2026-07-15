@@ -5,21 +5,6 @@ GETL is designed to be used independently without interfering with existing tool
 1. **Master Timeline Synchronization:** Uses Unity's Timeline as a master controller (one-way) to synchronize in real-time with the timelines of Cascadeur & iClone. (Simultaneous use is possible as they use separate ports).
 2. **Animation Baking:** A one-click feature that records and bakes the character bone data sent in real-time.
 
-## Development Purpose & Future Policy (Open Source)
-The ultimate goal behind the development of GEC, GEP, GTransporter, and now GETL, is to realize a Virtual Production (VP) environment based on Unity at a personal scale. We are creating these tools specifically to achieve this goal.
-
-Therefore, if you intend to use this tool for other purposes, it may not behave as expected. While workarounds in your workflow might solve some issues, there will be cases where direct script modification is necessary. 
-
-Because of this, we have decided to release this tool as Open Source Software (OSS). Furthermore, for the tools we have already released (excluding those that must comply with the original developer's license), we plan to gradually transition them to OSS in the future.
-
-## Important Notices (Please Read Carefully)
-* **No Support (As-is Delivery):** The developer is an individual FA (Factory Automation) engineer with a separate full-time job. Therefore, it is practically impossible to provide technical support tailored to individual environments. This tool is provided "completely free of charge and unsupported."
-* However, we plan to perform bug fixes and version updates irregularly. We highly welcome your feedback! Even the smallest comments are greatly appreciated.
-
-## A Request from the Developer
-If this tool helps you in your production, we would be incredibly grateful if you could subscribe to our YouTube channel and hit the like button. Your support is the greatest motivation for our future development! 
-▶️ [https://youtu.be/kNBWSCf2cIw](https://www.youtube.com/channel/UCj9OYwzMAIgYAeVkTV4wczw)
-
 ---
 **Windows Only:** This tool currently operates only in a Windows environment (as it utilizes the Windows API). It does not work on macOS or Linux.
 
@@ -76,21 +61,6 @@ This software is provided under a custom license. Modification is permitted, but
 GETLは今までのツールとは干渉することなく単体で使用することができます、GETLには主に2つの機能があります。
 1. Unityのタイムラインをマスターコントローラー(片方向)として Cascadeur & iClone のタイムラインとリアルタイム同期する機能 (別々のポートを使用するため同時使用が可能)
 2. リアルタイムに送られてくるキャラクターボーン情報をボタン一発でレコーディングするアニメーションベイク機能
-
-##  開発の目的そして今後の方針(OSS化)
-GEC、GEP、GTransporter、そして今回のGETLはUnityをベースとした映像制作環境(VP)を個人ベースで実現できないか？というのが最大の開発目的です。
-そしてそれを実現することを目標にツールの制作をしています、ですから、その他の用途でご使用される方は意図する動作をしてくれないケースもあるかと思います、
-運用方法の工夫などで解決できれば良いのですが、スクリプトを直接いじらないと駄目なこともあるでしょう。そこで今回の公開からはOSSとした次第です。
-また、いままでリリーズ済みのツールも開発元ライセンスを遵守しなければならない物以外は今後、順次OSS公開に切り替えていきます。
-
-##  重要な注意事項（必ずお読みください）
-* **サポートなし（現状渡し）:** 開発者は普段、別の本業を抱えるFA系個人エンジニアです。そのため、個別の環境に合わせた技術サポートを提供することは事実上不可能です。本ツールは「完全無料・サポート対象外」として提供されます。
-* しかしながら、バグフィックスやバージョンアップは不定期ながらも行って行くつもりです、皆様からのフィードバックは大歓迎です。些細なことでもどんどん書き込んで下さると助かります！
-
-##  開発者からのお願い
-もし皆様の制作のお役に立てましたら、ぜひ**YouTubeチャンネルの登録と高評価**をお願いいたします
-皆様からの応援が、今後の開発の最大のモチベーションになります
-▶️ [https://youtu.be/kNBWSCf2cIw](https://www.youtube.com/channel/UCj9OYwzMAIgYAeVkTV4wczw)
 
 ---
 **Windows専用:** 本ツールは現在、Windows環境でのみ動作します(Windows APIを使用しているため)。macOSやLinuxでは動作しません。
