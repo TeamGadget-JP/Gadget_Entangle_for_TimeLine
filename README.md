@@ -8,31 +8,47 @@ GETL is designed to be used independently without interfering with existing tool
 ---
 **Windows Only:** This tool currently operates only in a Windows environment (as it utilizes the Windows API). It does not work on macOS or Linux.
 
-## Installation & Usage
+## Installation and Usage Guide (Updated: 2026-08-05)<br>
 
-### 1. Cascadeur Preparation
-1. Download `GEC_TimeReceiver.py` from this repository.
-2. Place it in the Cascadeur Python plugins folder: `[Cascadeur Install Directory]\resources\scripts\python\commands\`
-3. Launch Cascadeur.
-4. From the menu bar, click `Commands` > `GETL TimeLine Receiver`.
-5. If the Event log displays `▶ [GETL TimeLine Receiver] Started syncing with Unity! (Port: 8991)`, it is ready for synchronization.
-6. Click `Commands` > `GETL TimeLine Receiver` again from the menu bar to stop synchronization.
+### 1. Cascadeur Setup<br>
+1. Download `GEC_TimeReceiver.py` from this repository.<br>
+2. Copy and place it into Cascadeur's Python plugin folder `commands\`.<br>
+   For a standard installation, this will be: `C:\Program Files\Cascadeur\resources\scripts\python\commands\`<br>
+   Please adjust the destination according to your specific installation environment.<br>
+3. Launch Cascadeur.<br>
+4. Click `Menu Bar > Commands > GETL TimeLine Receiver`.<br>
+5. If `▶️[GETL TimeLine Receiver]Started syncing with Unity!(Port:8991)` appears in the Event log, the sync preparation is complete.<br>
+   <img width="1264" height="324" alt="image" src="https://github.com/user-attachments/assets/e8a23f6e-9a35-4aaf-b241-dce2a72bd42d" /><br>
+6. Click `Menu Bar > Commands > GETL TimeLine Receiver` again to stop it.<br>
+   Currently, Cascadeur does not support custom UIs, so you must toggle it on and off in this manner.<br>
 
-### 2. iClone Preparation
-1. Download `GEi_TimeReceiver.py` from this repository.
-2. Launch iClone.
-3. From the menu bar, click `Script` > `Load Python`.
-4. Load the `GEi_TimeReceiver.py` you downloaded in step 1.
-5. A dialog will open; click the `▶ START SYNC (Port: 8992)` button to start synchronization.
+### 2. iClone Setup<br>
+1. Download `GEi_TimeReceiver.py` from this repository.<br>
+2. Launch iClone.<br>
+3. Click `Menu Bar > Script > Load Python`.<br>
+4. Load the `GEi_TimeReceiver.py` downloaded in step 1.<br>
+5. A dialog will open. Click the `▶ START SYNC(Port:8992)` button to start syncing.<br>
 
-### 3. Unity Preparation & Usage
-1. Download `GETL_v1.0.0.unitypackage` from this repository.
-2. Import it into your Unity project (`Assets` > `Import Package` > `Custom Package...`).
-3. `GETL_Recorder.cs` will be placed in `Project` > `Assets` > `Gadget` > `Editor`.
-4. `GETL_Broadcaster.cs` will be placed in `Project` > `Assets` > `Gadget` > `Scripts`.
-5. Create an empty GameObject in the `Hierarchy`. You can name it whatever you like, and attach `GETL_Broadcaster.cs` to it.
-6. Select the empty GameObject you created in step 5, then go to `Window` > `Sequencing` > `Timeline`.
-7. Click `Create` in the Timeline window and give it any name. Moving the seek bar will now synchronize the tools.
+### 3. Unity Setup and Usage<br>
+1. Download `GETL_v1.0.0.unitypackage` from this repository.<br>
+2. Import it into your Unity project (`Assets > Import Package > Custom Package...`).<br>
+3. `GETL_Recorder.cs` will be placed in `Project > Assets > Gadget > Editor`.<br>
+   If you are setting it up manually, create an `Editor` folder anywhere and place `GETL_Recorder.cs` inside it.<br>
+   This step is absolutely necessary. Once done, `Gadget` will appear in the Unity menu bar.<br>
+   <img width="475" height="183" alt="image" src="https://github.com/user-attachments/assets/47f99d16-1c8d-4e25-9dfd-dd5606328242" /><br>
+   Click `GETL Recorder`, and<br>
+   <img width="501" height="501" alt="image" src="https://github.com/user-attachments/assets/09f818ed-1502-4907-84f9-4050734cc3d3" /><br>
+   the GETL Recorder UI will open.<br>
+4. `GETL_Broadcaster.cs` will be placed in `Project > Assets > Gadget > Scripts`.<br>
+   If you are setting it up manually, create a `Scripts` folder anywhere and place `GETL_Broadcaster.cs` inside it.<br>
+5. Create an empty GameObject in the Hierarchy. You can name it anything. Attach `GETL_Broadcaster.cs` to it.<br>
+   You can attach it by dragging and dropping `GETL_Broadcaster.cs` onto the empty GameObject you just created.<br>
+   <img width="839" height="732" alt="image" src="https://github.com/user-attachments/assets/6e45bb6a-ae3b-4269-bab6-41ddb2eb9ef8" /><br>
+6. Select the empty GameObject from step 5 (or whatever you named it), and click `Window > Sequencing > Timeline`.<br>
+7. In the Timeline window that appears, click `Create >` and save it with any name.<br>
+8. At this point, if you move the seek bar in Unity, the timelines in Cascadeur and iClone should also move in sync.<br>
+   Reference image:<br>
+   <img width="1915" height="1930" alt="image" src="https://github.com/user-attachments/assets/c40dfb43-dd9e-4a69-9fbc-6a2f72e70a76" /><br>
 
 ### 4. How to Bake Animations
 1. Open the GETL Recorder UI from the toolbar: `Gadget` > `GETL Recorder`.
