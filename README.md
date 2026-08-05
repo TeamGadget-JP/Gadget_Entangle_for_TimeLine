@@ -63,55 +63,55 @@ GETLは今までのツールとは干渉することなく単体で使用する�
 2. リアルタイムに送られてくるキャラクターボーン情報をボタン一発でレコーディングするアニメーションベイク機能
 
 ---
-**Windows専用:** 本ツールは現在、Windows環境でのみ動作します(Windows APIを使用しているため)。macOSやLinuxでは動作しません。
+**Windows専用:** 本ツールは現在、Windows環境でのみ動作します(Windows APIを使用しているため)。macOSやLinuxでは動作しません。<br>
 
-## 導入手順と使用方法　2026-08-05更新
+## 導入手順と使用方法　2026-08-05更新<br>
 
-### 1. Cascadeur側の準備
-1. このリポジトリから `GEC_TimeReceiver.py` をダウンロードします。
-2. CascadeurのPythonプラグインフォルダ`commands\`にコピー配置します。
-   通常インストールなら`C:\Program Files\Cascadeur\resources\scripts\python\commands\`
-   貴方のインストール環境に合わせてコピー配置します。
-4. Cascadeurを起動してください。
-5. `メニューバー > Commands > GETL TimeLine Receiver`をクリック。
-6. Event logに`▶️[GETL TimeLine Receiver]Started syncing with Unity!(Port:8991)`を表示されば同期準備OKです。
-   <img width="1264" height="324" alt="image" src="https://github.com/user-attachments/assets/e8a23f6e-9a35-4aaf-b241-dce2a72bd42d" />
-8. もう一度`メニューバー > Commands > GETL TimeLine Receiver`をクリックすれば停止します。
-   現在CascadeurはUIが作れないのでこの様なオン・オフ操作をしなければなりません。
+### 1. Cascadeur側の準備<br>
+1. このリポジトリから `GEC_TimeReceiver.py` をダウンロードします。<br>
+2. CascadeurのPythonプラグインフォルダ`commands\`にコピー配置します。<br>
+   通常インストールなら`C:\Program Files\Cascadeur\resources\scripts\python\commands\`<br>
+   貴方のインストール環境に合わせてコピー配置します。<br>
+4. Cascadeurを起動してください。<br>
+5. `メニューバー > Commands > GETL TimeLine Receiver`をクリック。<br>
+6. Event logに`▶️[GETL TimeLine Receiver]Started syncing with Unity!(Port:8991)`を表示されば同期準備OKです。<br>
+   <img width="1264" height="324" alt="image" src="https://github.com/user-attachments/assets/e8a23f6e-9a35-4aaf-b241-dce2a72bd42d" /><br>
+8. もう一度`メニューバー > Commands > GETL TimeLine Receiver`をクリックすれば停止します。<br>
+   現在CascadeurはUIが作れないのでこの様なオン・オフ操作をしなければなりません。<br>
 
-### 2. iClone側の準備
-1. このリポジトリから `GEi_TimeReceiver.py` をダウンロードします。
-2. iCloneを起動します。
-3. `メニューバー > Script > Load Python`をクリック。
-4. 1.でダウンロードした`GEi_TimeReceiver.py`を読込。
-5. ダイアログが開きますので`▶ START SYNC(Port:8992)`ボタンで同期開始。
+### 2. iClone側の準備<br>
+1. このリポジトリから `GEi_TimeReceiver.py` をダウンロードします。<br>
+2. iCloneを起動します。<br>
+3. `メニューバー > Script > Load Python`をクリック。<br>
+4. 1.でダウンロードした`GEi_TimeReceiver.py`を読込。<br>
+5. ダイアログが開きますので`▶ START SYNC(Port:8992)`ボタンで同期開始。<br>
 
-### 3. Unity側の準備と使用方法
-1. このリポジトリから `GETL_v1.0.0.unitypackage` をダウンロードします。
-2. Unityプロジェクトにインポートします（`Assets > Import Package > Custom Package...`）。
-3. Project > Assets > Gadget > Editor に`GETL_Recorder.cs`が入ります。
-   手動でセットアップする場合は任意の場所に`Editor`というフォルダーを作りその中に`GETL_Recorder.cs`を配置します。
-   これは絶対に必要な作業です。そうしますとUnityのメニューバーに`Gadget`が現れます。
-   <img width="475" height="183" alt="image" src="https://github.com/user-attachments/assets/47f99d16-1c8d-4e25-9dfd-dd5606328242" />
-   `GETL Recorder`をクリックすると
-   <img width="501" height="501" alt="image" src="https://github.com/user-attachments/assets/09f818ed-1502-4907-84f9-4050734cc3d3" />
-   GETL RecorderのUIが開きます。
-5. Project > Assets > Gadget > Scripts に`GETL_Broadcaster.cs`が入ります。
-   手動でセットアップする場合は任意の場所に`Scripts`というフォルダーを作りその中に`GETL_Broadcaster.cs`を配置します。
-7. Hierarchy に空のゲームオブジェクトを制作します。名称は何でも良いです。そこに`GETL_Broadcaster.cs`をアタッチしてください。
-   作った空のゲームオブジェクトに`GETL_Broadcaster.cs`をドラッグ・アンド・ドロップでアタッチできます。
-   <img width="839" height="732" alt="image" src="https://github.com/user-attachments/assets/6e45bb6a-ae3b-4269-bab6-41ddb2eb9ef8" />
-9. 5.の空のゲームオブジェクト(名前をつけていればそれに)を選択して`Window > Sequencing > Timeline`をクリック
-10. 出てきたTimelineウィンドウの`Create > 任意の名前で作成`
-11. この時点でUnityのシークを動かせばCascadeurやiCloneのタイムラインも動くはずです。
-    参考画像
-    <img width="1915" height="1930" alt="image" src="https://github.com/user-attachments/assets/c40dfb43-dd9e-4a69-9fbc-6a2f72e70a76" />
+### 3. Unity側の準備と使用方法<br>
+1. このリポジトリから `GETL_v1.0.0.unitypackage` をダウンロードします。<br>
+2. Unityプロジェクトにインポートします（`Assets > Import Package > Custom Package...`）<br>
+3. Project > Assets > Gadget > Editor に`GETL_Recorder.cs`が入ります。<br>
+   手動でセットアップする場合は任意の場所に`Editor`というフォルダーを作りその中に`GETL_Recorder.cs`を配置します。<br>
+   これは絶対に必要な作業です。そうしますとUnityのメニューバーに`Gadget`が現れます。<br>
+   <img width="475" height="183" alt="image" src="https://github.com/user-attachments/assets/47f99d16-1c8d-4e25-9dfd-dd5606328242" /><br>
+   `GETL Recorder`をクリックすると<br>
+   <img width="501" height="501" alt="image" src="https://github.com/user-attachments/assets/09f818ed-1502-4907-84f9-4050734cc3d3" /><br>
+   GETL RecorderのUIが開きます。<br>
+5. Project > Assets > Gadget > Scripts に`GETL_Broadcaster.cs`が入ります。<br>
+   手動でセットアップする場合は任意の場所に`Scripts`というフォルダーを作りその中に`GETL_Broadcaster.cs`を配置します。<br>
+7. Hierarchy に空のゲームオブジェクトを制作します。名称は何でも良いです。そこに`GETL_Broadcaster.cs`をアタッチしてください。<br>
+   作った空のゲームオブジェクトに`GETL_Broadcaster.cs`をドラッグ・アンド・ドロップでアタッチできます。<br>
+   <img width="839" height="732" alt="image" src="https://github.com/user-attachments/assets/6e45bb6a-ae3b-4269-bab6-41ddb2eb9ef8" /><br>
+9. 5.の空のゲームオブジェクト(名前をつけていればそれに)を選択して`Window > Sequencing > Timeline`をクリック<br>
+10. 出てきたTimelineウィンドウの`Create > 任意の名前で作成`<br>
+11. この時点でUnityのシークを動かせばCascadeurやiCloneのタイムラインも動くはずです。<br>
+    参考画像<br>
+    <img width="1915" height="1930" alt="image" src="https://github.com/user-attachments/assets/c40dfb43-dd9e-4a69-9fbc-6a2f72e70a76" /><br>
 
-### 4. アニメーションベイクの仕方
-1. ツールバー`Gadget > GETL Recorder`でGETL Recorder UIが開きます。
-2. Target Avatar にアニメーションベイクしたいキャラクターをドラッグアンドドロップ。
-3. Playable Director に GETL_Broadcaster.csをアタッチしたゲームオブジェクトをドラッグアンドドロップ。
-4. Overwrite Clip に `.anim`をドラッグアンドドロップ。
+### 4. アニメーションベイクの仕方<br>
+1. ツールバー`Gadget > GETL Recorder`でGETL Recorder UIが開きます。<br>
+2. Target Avatar にアニメーションベイクしたいキャラクターをドラッグアンドドロップ。<br>
+3. Playable Director に GETL_Broadcaster.csをアタッチしたゲームオブジェクトをドラッグアンドドロップ。<br>
+4. Overwrite Clip に `.anim`をドラッグアンドドロップ。<br>
 5. Target Frame Rate は Cascadeur や iClone で30だったり60だったりしますので、合わせて設定してください。
 6. GETL_Broadcaster.csをアタッチしたゲームオブジェクトのInspector にも Target Frame Rate 項目がありますので忘れずにそちらも合わせてください。
 7. `Bake Delay(sec)`はそのままでいいと思います。
