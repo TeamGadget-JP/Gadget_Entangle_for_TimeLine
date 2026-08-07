@@ -3,10 +3,10 @@ import socket
 import sys
 import ctypes
 
-def command_name():
+def name():
     return "GETL TimeLine Receiver"
 
-def command_description():
+def description():
     return "Receives timeline sync data from Unity GETL_Broadcaster."
 
 def run(scene):
